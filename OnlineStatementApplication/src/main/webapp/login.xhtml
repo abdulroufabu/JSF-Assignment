@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<f:view>
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Login Page</title>
+		<h:outputStylesheet name="/css/common.css"  />
+	</h:head>
+	<h:body class="container">
+
+		<h:form id="loginForm" class="form-signin">
+
+			<p:growl id="msg" showDetail="true" life="4000" />
+
+			<p:panel id="loginPnl" class="form-heading"
+				header="Welcom to Online Banking"
+				style="width: 400px; margin: 0 auto;">
+				
+				<h:panelGrid id="loginPanel" columns="3" cellpadding="5">
+					<h:outputText value="Username" />
+					<p:inputText id="username" value="#{login.userName}"
+						class="form-control"></p:inputText>
+					<p:message for="username"/>
+					
+					<h:outputText value="Password" />
+					<p:password class="form-control" id="password" value="#{login.pwd}"
+						feedback="true"></p:password>
+					<p:message for="password"></p:message>
+				</h:panelGrid>
+				
+				<h:panelGrid columns="1" cellpadding="10" width="100%">
+					<p:commandButton id="loginButton" class="form-control"
+						action="#{login.login}" value="Login"
+						update="loginForm" ajax="true">
+					</p:commandButton>
+				</h:panelGrid>
+				
+			</p:panel>
+			<p:blockUI block="loginPnl" trigger="loginButton" style="float:right;">
+				<p:graphicImage value="resources/images/loading.png" />
+			</p:blockUI>
+		</h:form>
+
+	</h:body>
+</f:view>
+</html>

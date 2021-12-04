@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16385661341660" configfile="/OnlineStatementApplication/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" id="pf16385661549141" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16385661549142" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="search.xhtml" id="pf16385661549143" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16385661549142" path="/search.xhtml"/>
+  <links id="pf16385661549142" target="pf16385661549143" source="pf16385661549141" outcome="search"/>
+</pageflow:Pageflow>
