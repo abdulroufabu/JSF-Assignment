@@ -1,6 +1,3 @@
-# Nagarro Assignment
-This project is created as an assignment as part of Nagarro assessment.
-
 # General Overview
 Online Account Management Application with authentication mechanism allows users to have secure access to the application by validating the username and password.
 
