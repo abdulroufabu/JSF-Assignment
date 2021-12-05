@@ -1,5 +1,5 @@
 # Nagarro Assignment
-This project is created as an assignment for Nagarro hiring assessment process
+This project is created as an assignment as part of Nagarro assessment.
 
 # General Overview
 Online Account Management Application with authentication mechanism allows users to have secure access to the application by validating the username and password.
@@ -7,34 +7,30 @@ Online Account Management Application with authentication mechanism allows users
 Git Hub Link : https://github.com/abdulroufabu/NagarroTask/
 
 
-# Technologies
+# Technologies Used
 
-This web based application is created on Eclipse as Maven project using below specs:
+This application is created on Eclipse as Maven project using below specs:
 
-  JSF and Primefaces for views, DAO object ,HttpSession for session management, JSF managed beans
+  JSF and Primefaces for views, DAO object ,HttpSession for session management, JSF managed beans and PBKDF2 algorithm for hashing.
 
   Micrsoft access DB
   
   
-# Run the application
+# How to build the application
 
-1- download the project.
+1- Clone this project.
 
-2- in your eclipse import the project as maven project.
+2- Import the project as maven project.
 
 3- configure DB property file:
 
-  path : /src/main/webapp/WEB-INF/classes/dbConnection.properties
+  path : D:/Spring_workspace/OnlineStatementApplication/accountsdb.accdb
   
   proprity name ## db-url : configure db path here
 
-4- update maven project.
+4- Build and run the maven project (mvn tomcat:run)
 
-5- Build maven project.
-
-6- Run the project to you server (tomcat)
-
-7- in your browser, hit "[server name]:[port]/BMAssignment/"
+5- Open http://localhost:8080/OnlineStatementApplication/ in your favorite browser.
 
 
 # Missing requirments
