@@ -15,9 +15,9 @@ This application is created on Eclipse as Maven project using below specs:
   
 # How to build the application
 
-1- Clone this project.
+1- Clone this folder.
 
-2- Import the project as maven project.
+2- Import the project 'OnlineStatementApplication' as maven project.
 
 3- configure DB property file:
 
